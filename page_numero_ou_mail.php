@@ -14,11 +14,10 @@
         .container {
             max-width: 400px;
             margin: auto;
-            margin-top: 270px;
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
             color: #333;
@@ -56,17 +55,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Connexion</h1>
+        <h1>saisir Email ou Numéro</h1>
         <form action="login.php" method="POST">
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="identifiant">Email ou Numéro de téléphone</label>
+                <input type="text" id="identifiant" name="identifiant" required>
             </div>
-            <div class="form-group">
-                <label for="mdp">Mot de passe</label>
-                <input type="password" id="mdp" name="mdp" required>
-            </div>
-            <button type="submit" class="btn">Se connecter</button>
+            
+            <button type="submit" class="btn">Envoyer</button>
         </form>
     </div>
 </body>
